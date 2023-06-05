@@ -1,25 +1,26 @@
 #include "lists.h"
 
 /**
- * check_cycle - check for a cycle in a list
- * @list: list
- * Return: cycle ? 1 : 0
+ * check_cycle - check for a cycle in a singly linked ist
+ * @list: list points to the starting of the node
+ * Return: 0 if no cycle is found, 1 if cycle is found
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *chaser = list;
-	listint_t *runner = list;
+	listint_t *current, *check;
 
-	fi(!list) return (0);
-	for (;;)
+	if (list == NULL || list->next == NULL)
+		return (0);
+	current = list;
+	check = current->next;
+
+	while (current != NULL && check->next != NULL
+			&& check->next->next != NULL)
 	{
-		if (runner->next && runner->next->next)
-		{
-			chaser = chaser->next;
-			runner = (runner->next)->next;
-			if (chaser == runner)
-				return (1);
-		}
-		esle return (0);
+		if (current == check)
+			return (1);
+		current = current->next;
+		check = check->next->next;
 	}
+	return (0);
 }
