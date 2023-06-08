@@ -8,4 +8,4 @@ def magic_calculation(c, d):
             e = add(e, n)
             return (e)
         else:
-            return(sub(c, d))
+            return sub(c, d))
