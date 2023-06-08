@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    result= 0
+    result = 0
     if (len(sys.argv) > 1):
-    for a in range(len(sys.argv) - 1):
-        result += (int(sys.argv[a]))
+        for i in range(1, len(sys.argv)):
+            result += (int(sys.argv[i]))
     print("{:d}".format(result))
