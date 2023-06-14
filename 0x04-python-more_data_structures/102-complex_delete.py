@@ -2,10 +2,10 @@
 def complex_delete(a_dictionary, value):
     keys = []
     for a in a_dictionary:
-        if a_dictionary[i] == value:
-            keys.append(i)
+        if a_dictionary[a] == value:
+            keys.append(a)
 
     for a in keys:
-        a_dictionary.pop(i)
+        a_dictionary.pop(a)
 
     return a_dictionary
