@@ -6,7 +6,7 @@ def best_score(a_dictionary):
     best = None
     for a in a_dictionary:
         best = a if best is None else best
-        if a_dictionary[i] > a_dictionary[best]:
+        if a_dictionary[a] > a_dictionary[best]:
             best = a
 
     return best
