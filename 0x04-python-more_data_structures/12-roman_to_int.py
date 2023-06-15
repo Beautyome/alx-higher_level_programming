@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
         if a not in values:
             return 0
 
-        if values[i] < prev and prev:
+        if values[a] < prev and prev:
             t_sum -= values[a]
         else:
             t_sum += values[a]
