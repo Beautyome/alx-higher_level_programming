@@ -50,3 +50,10 @@ class Square:
         print("\n".join([" " * self.position[0] +
                         "#" * self.size
                         for i in range(self.size)]))
+
+    def __str__(self):
+        return f"" if not self.size else (
+                f"\n" * self.position[1] +
+                f"\n".join([" " * self.position[0] +
+                            "#" * self.size
+                            for i in range(self.size)]))
