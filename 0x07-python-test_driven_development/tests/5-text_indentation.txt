@@ -47,4 +47,4 @@ Test other data types:
      >>> text_indentation(-1)
      Traceback (most recent call last):
      ...
-
+     TypeError: text must be a string

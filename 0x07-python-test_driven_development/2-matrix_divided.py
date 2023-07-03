@@ -32,4 +32,4 @@ def matrix_divided(matrix, div):
                 raise TypeError(msg)
             newlist.append(round(i/div, 2))
         new_matrix.append(newlist)
-
+        return new_matrix

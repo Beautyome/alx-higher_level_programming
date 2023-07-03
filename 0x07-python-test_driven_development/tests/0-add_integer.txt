@@ -61,4 +61,4 @@ Test special float NaN in Python (not a number):
      >>> print(add_integer(float("NaN")))
      Traceback (most recent call last):
      ...
-
+     ValueError: cannot convert float NaN to integer
