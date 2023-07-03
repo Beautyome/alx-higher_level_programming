@@ -38,4 +38,4 @@ if __name__ == "__main__":
     except ValueError:
         print("N must be a number")
         sys.exit(1)
-    solve_nqueens
+    solve_nqueens(N)
