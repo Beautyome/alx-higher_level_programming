@@ -93,3 +93,4 @@ class Rectangle():
 
     def __repr__(self):
         """ String representation to recreate new instance """
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
