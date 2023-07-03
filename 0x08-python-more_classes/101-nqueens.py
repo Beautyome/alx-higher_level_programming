@@ -34,4 +34,4 @@ def main():
     board = [[0] * n for _ in range(n)]
     solve(board, 0)
 if __name__ == '__main__':
-
+    main()
