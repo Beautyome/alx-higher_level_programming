@@ -93,4 +93,4 @@ if __name__ == "__main__":
     recursive_solve(board, 0, N, solutions)
 
     for solution in solutions:
-        print
+        print(solution)
