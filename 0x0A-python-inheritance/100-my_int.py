@@ -30,4 +30,4 @@ class MyInt(int):
         Return:
            True if both equal
         """
-        return self.num == othe
+        return self.num == other
