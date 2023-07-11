@@ -43,4 +43,4 @@ class Student():
             for att in attrs:
                 if att in self.__dict__.keys():
                     dic[att] = self.__dict__[att]
-            return di
+            return dic

@@ -31,4 +31,4 @@ class Student():
         (list, dictionary, dictionary, string)
         for JSON serialization of an object
         """
-        return self.__dict_
+        return self.__dict__

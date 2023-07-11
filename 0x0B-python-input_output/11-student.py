@@ -51,4 +51,4 @@ class Student():
             Transfer all attributes of json to self
         """
         for k, v in json.items():
-            setattr(self, k, v
+            setattr(self, k, v)
