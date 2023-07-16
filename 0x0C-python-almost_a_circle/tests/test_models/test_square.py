@@ -124,4 +124,4 @@ class TestBase(unittest.TestCase):
         self.assertEqual(type(sdic), dict)
         s2 = Square(10, 10)
         s2.update(**sdic)
-        self.assertEqual(str(s2), '[Square] (4) 2/3 - 1'
+        self.assertEqual(str(s2), '[Square] (4) 2/3 - 1')

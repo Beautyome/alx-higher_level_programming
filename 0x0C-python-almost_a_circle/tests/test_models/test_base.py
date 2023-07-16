@@ -183,4 +183,4 @@ class TestBase(unittest.TestCase):
         Rectangle.save_to_file([])
         recs = Rectangle.load_from_file()
         self.assertEqual(type(recs), list)
-        self.assertEqual(len(recs), 0
+        self.assertEqual(len(recs), 0)
