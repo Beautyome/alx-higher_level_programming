@@ -151,4 +151,4 @@ class Rectangle(Base):
         d["height"] = self.height
         d["x"] = self.x
         d["y"] = self.y
-        return 
+        return d
