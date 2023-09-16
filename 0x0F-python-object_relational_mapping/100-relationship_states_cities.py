@@ -29,4 +29,4 @@ if __name__ == "__main__":
 
     session.add(cal_state)
     session.commit()
-    session.close(
+    session.close()
