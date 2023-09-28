@@ -1,31 +1,34 @@
 #!/usr/bin/python3
-""" Finds a peak in a list of unsorted integers
-"""
+'''
+Returns the peak of an unsorted list
+'''
+ret = int or None
 
 
-def find_peak(list_of_integers):
-    """
-    Args:
-        list_of_integers(int): list of integers to find peak of
-    Returns: peak of list_of_integers or None
-    """
-    size = len(list_of_integers)
-    mid_e = size
-    mid = size // 2
+def find_peak(list_of_integers) -> ret:
+    '''
+    Finds a number that is greater than both left
+    and right
+    '''
 
-    if size == 0:
+    listLen = len(list_of_integers)
+    if listLen == 0:
         return None
 
-    while True:
-        mid_e = mid_e // 2
-        if (mid < size - 1 and
-                list_of_integers[mid] < list_of_integers[mid + 1]):
-            if mid_e // 2 == 0:
-                mid_e = 2
-            mid = mid + mid_e // 2
-        elif mid_e > 0 and
-            if mid_e // 2 == 0:
-                mid_e = 2
-            mid = mid - mid_e // 2
-        else:
-            return list_of_integers[mid]
+    tmp = list_of_integers
+    i = 0
+    n = listLen - 1
+
+    if tmp[i] > tmp[i+1]:
+        return tmp[i]
+    if tmp[n] > tmp[n-1]:
+        return tmp[n]
+
+    x = (i + n) // 2
+    if tmp[x-1] < tmp[x] and tmp[x+1] < tmp[x]:
+        return tmp[x]
+    if tmp[x] < tmp[x-1]:
+        return find_peak(tmp[i:x+1])
+    if tmp[x] < tmp[x+1]:
+        return find_peak(tmp[x:n+1])
+    return tmp[i]
